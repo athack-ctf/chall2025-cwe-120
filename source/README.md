@@ -1,10 +1,25 @@
-# Running Your Challenge
+# Run (and how to build)
 
-Place all the code needed to run your challenge in this directory, and document the required environment as described
-below:
+**NOTE**: You shouldn't need to rebuild the binaries, unless you want to introduce some changes.
 
-- If you have included a `Dockerfile` and a `docker-compose.yml`, then that is all that should be enough (unless additional
-  explanations are needed as well).
-- If you have not, please document the steps to create a runnable instance of your challenge, as we (Anis and Hugo)
-  will refer to this when adding the `Dockerfile` and `docker-compose.yml`
-- For any clarifications, consult us (Anis and Hugo).
+## Using `docker compose`
+
+```
+# Run container
+docker compose up --build
+
+# Test connection (replace 127.25.0.2 with the container's ip)
+nc 172.25.0.2 2025
+```
+
+## Building binaries
+
+Below instructions will build 2 binaries: `login` (for the binary running on the server, and containing the real flag) and `login-using-dummy-password` (to be distributed
+as an offline artifact).
+
+```
+mkdir build
+cd build
+cmake ..
+make
+```
