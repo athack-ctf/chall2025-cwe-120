@@ -25,16 +25,16 @@ int main() {
     printf(">>        * * * Login * * *        <<\n");
 
     char user_password[32];
-    int isAuth = 0;
+    int is_auth = 0;
 
     printf("Enter the password: ");
     scanf("%64[^\n]", user_password);
 
     if (strcmp(user_password, PASSWORD) == 0) {
-        isAuth = 1;
+        is_auth = 1;
     }
 
-    if (isAuth) {
+    if (is_auth) {
         printf("The password is right!\n");
         print_flag();
     } else {

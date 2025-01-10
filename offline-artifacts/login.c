@@ -22,17 +22,17 @@ int main() {
 
     char user_password[32];
 
-    // Hum, I hope users never find a way of changing the value of isAuth, otherwise, this authentication is doomed.
-    int isAuth = 0;
+    // Hum, I hope users never find a way of changing the value of is_auth, otherwise, this authentication is doomed.
+    int is_auth = 0;
 
     printf("Enter the password: ");
     scanf("%64[^\n]", user_password);
 
     if (strcmp(user_password, PASSWORD) == 0) {
-        isAuth = 1;
+        is_auth = 1;
     }
 
-    if (isAuth) {
+    if (is_auth) {
         printf("The password is right!\n");
         print_flag();
     } else {
