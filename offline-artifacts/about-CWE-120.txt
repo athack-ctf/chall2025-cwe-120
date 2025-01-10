@@ -1,0 +1,5 @@
+# CWE-120
+
+A buffer overflow happens when too much data is crammed into a buffer, which is a storage area. When this happens,
+the extra data spills over and can mess up nearby memory. This can lead to things like crashes, data corruption,
+or even letting hackers take control of the system. That's what CWE-120 is all about.

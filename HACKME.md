@@ -1,10 +1,6 @@
-The description of your challenge as seen by participants in CTFd. Try to make it feel within the theme
-of the event...
+For this challenge, your goal is to show you get how buffer overflows work by logging into a system without the password
+(that's how you'll get the flag).
 
----
-If your challenge is a multi-flag one (i.e., it consists of a sequence of sub-challenges each rewarded with
-its own flag), requiring a different description for each sub-challenge, then have your descriptions split as 
-done with this paragraph, and the next one.
-
----
-Obviously, for each sub-challenge, you should provide its flag value in [solution/FLAGS.md](solution/FLAGS.md).
+You’ll be working with a C program called "login.c," which is the source code for the binary that handles the login process. 
+The code in "login.c" should give you all the info you need, but to make it easier, we’re also providing a copy of the binary
+(with a different password) for reference.
