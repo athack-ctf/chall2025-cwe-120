@@ -7,7 +7,7 @@
 - [ ] **OFF**line
 - [X] **ON**line
 
-## Designer(s)
+## Designer
 
 - Anis
 
@@ -18,6 +18,6 @@ buffer overflow exploitation for absolute beginners.
 
 **IMPORTANT:** This description will **NOT** be shared with participants.
 
-## Category(ies)
+## Category
 
 - `pwn`
