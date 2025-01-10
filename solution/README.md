@@ -1,10 +1,7 @@
-# How to Solve the Challenge?
+# Solution
 
-Provide reproducible steps to solve the challenge. This can include:
+- Connect to the TCP socket `nc 172.25.0.2 2025` (replace ip and port with the right ones)
+- Enter `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa` as the password.
+- Get the flag.
 
-- Runnable code (e.g., `PoC.py`)
-- A Bash script or a sequence of commented commands
-- Well-explained instructions
-- ...
-
-Ensure that all dependencies required to build or run the solution are provided (e.g., `requirements.txt`) or thoroughly documented.
+  ![](./get-the-flag.png)
