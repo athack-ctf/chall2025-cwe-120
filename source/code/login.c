@@ -7,6 +7,9 @@
 #define PASSWORD "4+I_*#sF(!!$-X7/"
 #endif
 
+#define TRUE (1)
+#define FALSE (0)
+
 void print_flag() {
     FILE *flag_file = fopen("flag.txt", "r");
     if (flag_file == NULL) {
@@ -25,13 +28,13 @@ int main() {
     printf(">>        * * * Login * * *        <<\n");
 
     char user_password[32];
-    int is_auth = 0;
+    int is_auth = FALSE;
 
     printf("Enter the password: ");
     scanf("%64[^\n]", user_password);
 
     if (strcmp(user_password, PASSWORD) == 0) {
-        is_auth = 1;
+        is_auth = TRUE;
     }
 
     if (is_auth) {
