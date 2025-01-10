@@ -1,4 +1,4 @@
-# Chall - CWE-121
+# Chall - CWE-120
 
 > A very (very) basic buffer overflow based challenge (for absolute beginners).
 
