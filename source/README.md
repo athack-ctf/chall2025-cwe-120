@@ -1,4 +1,4 @@
-# Run (and how to build)
+# Run (and build)
 
 **NOTE**: You shouldn't need to rebuild the binaries, unless you want to introduce some changes.
 
