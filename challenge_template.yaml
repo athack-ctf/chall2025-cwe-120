@@ -30,6 +30,7 @@ tags:
 files:
     - offline-artifacts/about-CWE-120.txt
     - offline-artifacts/login-using-dummy-password
+    - offline-artifacts/login.c
 
 # Put hidden by default
 state: hidden
