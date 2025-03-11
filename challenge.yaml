@@ -1,38 +1,31 @@
 name: "CWE120"
-author: ""
-category: <Pwn>
+author: "Anis"
+category: Pwn
 description: |
     For this challenge, your goal is to prove your understanding of how buffer overflows work, by logging remotely into a system without
     knowing the password it's asking for.
 
     You'll be working with a C program called `login.c`, which is the source code for the binary that handles the login process. 
-    The code in `login.c` should give you all the info you need, but to make it easier, we’re also providing a copy of the binary
+    The code in `login.c` should give you all the info you need, but to make it easier, we're also providing a copy of the binary
     (with a different password) for reference.
-
-    [Start your challenge instance](https://instancer.athackctf.com/chall2025-cwe-120/create)
     
-value: 0
+value: 100
 
-# Let's put the challenges as standard for now and we can script to change
 type: standard
 
-# Flags specify answers that your challenge use. You should generally provide at least one.
 flags:
   - type: "static"
     content: "ATHACKCTF{seee_d0uble_y0u_eee_0ne_twenty}"
     data: "case_insensitive"
 
-# Available: beginner, interac
 tags:
+    - tcp
     - beginner
-
-# Provide paths to files from the same directory that this file is in
 files:
     - offline-artifacts/about-CWE-120.txt
     - offline-artifacts/login-using-dummy-password
     - offline-artifacts/login.c
 
-# Put hidden by default
-state: hidden
+state: visible
 
 version: "0.1"
