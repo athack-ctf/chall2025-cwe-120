@@ -1,15 +1,24 @@
-# Run (and build)
+# Running This Challenge
 
 **NOTE**: You shouldn't need to rebuild the binaries, unless you want to introduce some changes.
 
-## Using `docker compose`
+## Docker
 
+Build
 ```
-# Run container
-docker compose up --build
+docker build -t athack-ctf/chall2025-cwe-120:latest .
+```
 
-# Test connection (if running remotely, replace 127.0.0.1 with the container's ip)
-nc 127.0.0.1 2025
+Run
+```
+docker run -d --name cwe-120 \
+  -p 52025:2025 \
+  athack-ctf/chall2025-cwe-120:latest
+```
+
+Test connection (if running remotely, replace 127.0.0.1 with the container's ip)
+```
+nc 127.0.0.1 52025
 ```
 
 ## Building binaries
