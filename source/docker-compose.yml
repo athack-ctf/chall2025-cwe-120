@@ -1,8 +1,7 @@
-version: '3.8'
-
 services:
   cwe-120:
     build: .
     image: athack-ctf/chall2025-cwe-120:latest
     ports:
-      - "2025:2025"
+    - 52025:2025
+version: '3.8'
