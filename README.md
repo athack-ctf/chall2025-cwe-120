@@ -1,4 +1,4 @@
-# @HACK 2025: CWE120
+# @HACK 2025: CWE 120
 
 > Authored by [Anis](https://github.com/AnixPasBesoin).
 
